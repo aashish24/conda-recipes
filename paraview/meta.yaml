@@ -1,0 +1,25 @@
+package:
+  name: paraview
+  version: "4.1"
+
+source:
+  git_url: git://paraview.org/ParaView.git
+  git_tag: master
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - python
+    - numpy
+    - cmake
+
+test:
+  commands:
+    - paraview -help
+
+about:
+  home: http://www,paraview.org
+  license: BSD
+  summary: A 2D/3D computing and visualization platform
