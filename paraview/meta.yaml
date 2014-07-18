@@ -6,14 +6,13 @@ source:
   git_url: git://paraview.org/ParaView.git
   git_tag: master
 
-build:
-  number: 1
-
 requirements:
   build:
     - python
     - numpy
     - cmake
+  run:
+    - python
 
 test:
   commands:
